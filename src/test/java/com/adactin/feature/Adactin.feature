@@ -6,18 +6,12 @@ Background:
 
 
 @login
-Scenario Outline: Checking the valid username and password for login function
+Scenario: Checking the valid username and password for login function
 Given User launch the adactin application
-When User enter the "<Username>" valid username
-And User enter the "<Password>" valid password
+When User enter the valid username
+And User enter the valid password
 And User enter the login button
 Then It lands to the homepage successfully
-
-Examples:
-|Username|Password|
-|Crazie|a1s1a1|
-|Craziequeen|b1v2b1|
-|PavithraN|Pavi@2426|
 
 @SearchHotel
 Scenario: User searching the required hotel for lovable stay
@@ -37,8 +31,8 @@ Then It lands to the nextpage succesfully
 
 @BookHotel
 Scenario: User mentioning details to book the hotel
-Given User mentioning "Aashiq" firstname
-When User mentioning "crazie" lastname
+Given User mentioning firstname
+When User mentioning lastname
 And User mentioning billing address
 And User mentioning creditcard number
 And User selecting creditcard type

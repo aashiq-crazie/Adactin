@@ -42,25 +42,27 @@ public class StepDefinition extends BaseClass {
 		getUrl(Url);
 	}
 
-	/*
-	 * @When("^User enter the valid username$") public void
-	 * user_enter_the_valid_username() throws Throwable {
-	 * sendKeys(pom.getSip().getUsername(), "PavithraN"); }
-	 * 
-	 * @When("^User enter the valid password$") public void
-	 * user_enter_the_valid_password() throws Throwable {
-	 * sendKeys(pom.getSip().getPassword(), "Pavi@2426"); }
-	 */
-
-	@When("^User enter the \"([^\"]*)\" valid username$")
-	public void user_enter_the_valid_username(String username) throws Throwable {
-		sendKeys(pom.getSip().getUsername(), username);
+	@When("^User enter the valid username$")
+	public void user_enter_the_valid_username() throws Throwable {
+		String userName = FileReaderManager.getInstance().getTDInstance().testMeth("User Name");
+		sendKeys(pom.getSip().getUsername(), userName);
 	}
 
-	@When("^User enter the \"([^\"]*)\" valid password$")
-	public void user_enter_the_valid_password(String password) throws Throwable {
+	@When("^User enter the valid password$")
+	public void user_enter_the_valid_password() throws Throwable {
+		String password = FileReaderManager.getInstance().getTDInstance().testMeth("Password");
 		sendKeys(pom.getSip().getPassword(), password);
 	}
+
+	/*
+	 * @When("^User enter the \"([^\"]*)\" valid username$") public void
+	 * user_enter_the_valid_username(String username) throws Throwable {
+	 * sendKeys(pom.getSip().getUsername(), username); }
+	 * 
+	 * @When("^User enter the \"([^\"]*)\" valid password$") public void
+	 * user_enter_the_valid_password(String password) throws Throwable {
+	 * sendKeys(pom.getSip().getPassword(), password); }
+	 */
 
 	@When("^User enter the login button$")
 	public void user_enter_the_login_button() throws Throwable {
@@ -74,27 +76,32 @@ public class StepDefinition extends BaseClass {
 
 	@Given("^User select the required location$")
 	public void user_select_the_required_location() throws Throwable {
-		dropDownMeth(pom.getShp().getLocation(), "value", "Melbourne");
+		String location = FileReaderManager.getInstance().getTDInstance().testMeth("Location");
+		dropDownMeth(pom.getShp().getLocation(), "value", location);
 	}
 
 	@When("^User select the number of rooms$")
 	public void user_select_the_number_of_rooms() throws Throwable {
-		dropDownMeth(pom.getShp().getRoom(), "value", "2");
+		String rooms = FileReaderManager.getInstance().getTDInstance().testMeth("Number of Rooms");
+		dropDownMeth(pom.getShp().getRoom(), "value", rooms);
 	}
 
 	@When("^User mentioning checkin date$")
 	public void user_mentioning_checkin_date() throws Throwable {
-		sendKeys(pom.getShp().getCheckInDate(), "20/05/2020");
+		String cIDate = FileReaderManager.getInstance().getTDInstance().testMeth("Check In Date");
+		sendKeys(pom.getShp().getCheckInDate(), cIDate);
 	}
 
 	@When("^User mentioning checkout date$")
 	public void user_mentioning_checkout_date() throws Throwable {
-		sendKeys(pom.getShp().getCheckOutDate(), "21/05/2020");
+		String cODate = FileReaderManager.getInstance().getTDInstance().testMeth("Check Out Date");
+		sendKeys(pom.getShp().getCheckOutDate(), cODate);
 	}
 
 	@When("^User selecting adults per room$")
 	public void user_selecting_adults_per_room() throws Throwable {
-		dropDownMeth(pom.getShp().getAdultsPerRoom(), "value", "2");
+		String adultRoom = FileReaderManager.getInstance().getTDInstance().testMeth("Adults per Room");
+		dropDownMeth(pom.getShp().getAdultsPerRoom(), "value", adultRoom);
 	}
 
 	@When("^User enter the search button$")
@@ -117,52 +124,61 @@ public class StepDefinition extends BaseClass {
 		clickMethod(pom.getSehp().getContinueButton());
 	}
 
+	@Given("^User mentioning firstname$")
+	public void user_mentioning_firstname() throws Throwable {
+		String firstName = FileReaderManager.getInstance().getTDInstance().testMeth("First Name");
+		sendKeys(pom.getBhp().getFirstName(), firstName);
+	}
+
+	@When("^User mentioning lastname$")
+	public void user_mentioning_lastname() throws Throwable {
+		String lastName = FileReaderManager.getInstance().getTDInstance().testMeth("Last Name");
+		sendKeys(pom.getBhp().getLastName(), lastName);
+	}
+
 	/*
-	 * @Given("^User mentioning firstname$") public void user_mentioning_firstname()
-	 * throws Throwable { sendKeys(pom.getBhp().getFirstName(), "Aashiq"); }
+	 * @Given("^User mentioning \"([^\"]*)\" firstname$") public void
+	 * user_mentioning_firstname(String firstname) throws Throwable {
+	 * sendKeys(pom.getBhp().getFirstName(), firstname); }
 	 * 
-	 * @When("^User mentioning lastname$") public void user_mentioning_lastname()
-	 * throws Throwable { sendKeys(pom.getBhp().getLastName(), "crazie"); }
+	 * @When("^User mentioning \"([^\"]*)\" lastname$") public void
+	 * user_mentioning_lastname(String lastname) throws Throwable {
+	 * sendKeys(pom.getBhp().getLastName(), lastname); }
 	 */
-
-	@Given("^User mentioning \"([^\"]*)\" firstname$")
-	public void user_mentioning_firstname(String firstname) throws Throwable {
-		sendKeys(pom.getBhp().getFirstName(), firstname);
-	}
-
-	@When("^User mentioning \"([^\"]*)\" lastname$")
-	public void user_mentioning_lastname(String lastname) throws Throwable {
-		sendKeys(pom.getBhp().getLastName(), lastname);
-	}
-
 	@When("^User mentioning billing address$")
 	public void user_mentioning_billing_address() throws Throwable {
-		sendKeys(pom.getBhp().getAddress(), "No.423, gasidbikygcb.shgfdg,shgd.");
+		String address = FileReaderManager.getInstance().getTDInstance().testMeth("Billing Address");
+		sendKeys(pom.getBhp().getAddress(), address);
 	}
 
 	@When("^User mentioning creditcard number$")
 	public void user_mentioning_creditcard_number() throws Throwable {
-		sendKeys(pom.getBhp().getCardNumber(), "1234567899632587");
+		String creditNumber = FileReaderManager.getInstance().getTDInstance().testMeth("Credit Card No.");
+		sendKeys(pom.getBhp().getCardNumber(), creditNumber);
 	}
 
 	@When("^User selecting creditcard type$")
 	public void user_selecting_creditcard_type() throws Throwable {
-		dropDownMeth(pom.getBhp().getCardType(), "value", "AMEX");
+		String creditType = FileReaderManager.getInstance().getTDInstance().testMeth("Credit Card Type");
+		dropDownMeth(pom.getBhp().getCardType(), "value", creditType);
 	}
 
 	@When("^User mentioning month of expiry$")
 	public void user_mentioning_month_of_expiry() throws Throwable {
-		dropDownMeth(pom.getBhp().getExpMonth(), "value", "2");
+		String expiryMonth = FileReaderManager.getInstance().getTDInstance().testMeth("Expiry Month");
+		dropDownMeth(pom.getBhp().getExpMonth(), "value", expiryMonth);
 	}
 
 	@When("^user mentioning year of expiry$")
 	public void user_mentioning_year_of_expiry() throws Throwable {
-		dropDownMeth(pom.getBhp().getExpYear(), "value", "2020");
+		String expiryYear = FileReaderManager.getInstance().getTDInstance().testMeth("Expiry Year");
+		dropDownMeth(pom.getBhp().getExpYear(), "value", expiryYear);
 	}
 
 	@When("^User mentioning the cvv number$")
 	public void user_mentioning_the_cvv_number() throws Throwable {
-		sendKeys(pom.getBhp().getCvvNumber(), "123");
+		String cvvNumber = FileReaderManager.getInstance().getTDInstance().testMeth("CVV Number");
+		sendKeys(pom.getBhp().getCvvNumber(), cvvNumber);
 	}
 
 	@When("^User enter the booknow button$")
@@ -188,7 +204,7 @@ public class StepDefinition extends BaseClass {
 
 	@Given("^User enter the cancel button$")
 	public void user_enter_the_cancel_button() throws Throwable {
-	//	clickMethod(pom.getChp().getCancelButton());
+		// clickMethod(pom.getChp().getCancelButton());
 	}
 
 	@When("^user confirming the cancellation$")

@@ -6,128 +6,48 @@ formatter.feature({
   "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
+formatter.before({
+  "duration": 211000,
+  "status": "passed"
+});
+formatter.background({
+  "line": 3,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 4,
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "goes to landing page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinition.the_user_is_logged_in()"
+});
+formatter.result({
+  "duration": 3108022000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDefinition.goes_to_landing_page()"
+});
+formatter.result({
+  "duration": 45600,
+  "status": "passed"
+});
+formatter.scenario({
   "line": 9,
   "name": "Checking the valid username and password for login function",
   "description": "",
   "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;checking-the-valid-username-and-password-for-login-function",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 8,
-      "name": "@login"
-    }
-  ]
-});
-formatter.step({
-  "line": 10,
-  "name": "User launch the adactin application",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 11,
-  "name": "User enter the \"\u003cUsername\u003e\" valid username",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 12,
-  "name": "User enter the \"\u003cPassword\u003e\" valid password",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "User enter the login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "It lands to the homepage successfully",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 16,
-  "name": "",
-  "description": "",
-  "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;checking-the-valid-username-and-password-for-login-function;",
-  "rows": [
-    {
-      "cells": [
-        "Username",
-        "Password"
-      ],
-      "line": 17,
-      "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;checking-the-valid-username-and-password-for-login-function;;1"
-    },
-    {
-      "cells": [
-        "Crazie",
-        "a1s1a1"
-      ],
-      "line": 18,
-      "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;checking-the-valid-username-and-password-for-login-function;;2"
-    },
-    {
-      "cells": [
-        "Craziequeen",
-        "b1v2b1"
-      ],
-      "line": 19,
-      "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;checking-the-valid-username-and-password-for-login-function;;3"
-    },
-    {
-      "cells": [
-        "PavithraN",
-        "Pavi@2426"
-      ],
-      "line": 20,
-      "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;checking-the-valid-username-and-password-for-login-function;;4"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 248300,
-  "status": "passed"
-});
-formatter.background({
-  "line": 3,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 4,
-  "name": "the user is logged in",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "goes to landing page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinition.the_user_is_logged_in()"
-});
-formatter.result({
-  "duration": 1163813300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.goes_to_landing_page()"
-});
-formatter.result({
-  "duration": 106400,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 18,
-  "name": "Checking the valid username and password for login function",
-  "description": "",
-  "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;checking-the-valid-username-and-password-for-login-function;;2",
   "type": "scenario",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
       "line": 8,
@@ -142,18 +62,12 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "User enter the \"Crazie\" valid username",
-  "matchedColumns": [
-    0
-  ],
+  "name": "User enter the valid username",
   "keyword": "When "
 });
 formatter.step({
   "line": 12,
-  "name": "User enter the \"a1s1a1\" valid password",
-  "matchedColumns": [
-    1
-  ],
+  "name": "User enter the valid password",
   "keyword": "And "
 });
 formatter.step({
@@ -170,55 +84,43 @@ formatter.match({
   "location": "StepDefinition.user_launch_the_adactin_application()"
 });
 formatter.result({
-  "duration": 7046337000,
+  "duration": 3211242600,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Crazie",
-      "offset": 16
-    }
-  ],
-  "location": "StepDefinition.user_enter_the_valid_username(String)"
+  "location": "StepDefinition.user_enter_the_valid_username()"
 });
 formatter.result({
-  "duration": 2556798900,
+  "duration": 5627997800,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "a1s1a1",
-      "offset": 16
-    }
-  ],
-  "location": "StepDefinition.user_enter_the_valid_password(String)"
+  "location": "StepDefinition.user_enter_the_valid_password()"
 });
 formatter.result({
-  "duration": 174037100,
+  "duration": 163420500,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_enter_the_login_button()"
 });
 formatter.result({
-  "duration": 3480961200,
+  "duration": 4412899600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.it_lands_to_the_homepage_successfully()"
 });
 formatter.result({
-  "duration": 111500,
+  "duration": 83300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 94272500,
+  "duration": 177200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 234000,
+  "duration": 72500,
   "status": "passed"
 });
 formatter.background({
@@ -242,280 +144,18 @@ formatter.match({
   "location": "StepDefinition.the_user_is_logged_in()"
 });
 formatter.result({
-  "duration": 223200,
+  "duration": 99200,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.goes_to_landing_page()"
 });
 formatter.result({
-  "duration": 152100,
+  "duration": 63300,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 19,
-  "name": "Checking the valid username and password for login function",
-  "description": "",
-  "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;checking-the-valid-username-and-password-for-login-function;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 8,
-      "name": "@login"
-    }
-  ]
-});
-formatter.step({
-  "line": 10,
-  "name": "User launch the adactin application",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 11,
-  "name": "User enter the \"Craziequeen\" valid username",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 12,
-  "name": "User enter the \"b1v2b1\" valid password",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "User enter the login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "It lands to the homepage successfully",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinition.user_launch_the_adactin_application()"
-});
-formatter.result({
-  "duration": 377142800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Craziequeen",
-      "offset": 16
-    }
-  ],
-  "location": "StepDefinition.user_enter_the_valid_username(String)"
-});
-formatter.result({
-  "duration": 168561400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "b1v2b1",
-      "offset": 16
-    }
-  ],
-  "location": "StepDefinition.user_enter_the_valid_password(String)"
-});
-formatter.result({
-  "duration": 99210200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_enter_the_login_button()"
-});
-formatter.result({
-  "duration": 557430800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.it_lands_to_the_homepage_successfully()"
-});
-formatter.result({
-  "duration": 251500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 110000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 160900,
-  "status": "passed"
-});
-formatter.background({
-  "line": 3,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 4,
-  "name": "the user is logged in",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "goes to landing page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinition.the_user_is_logged_in()"
-});
-formatter.result({
-  "duration": 97800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.goes_to_landing_page()"
-});
-formatter.result({
-  "duration": 59900,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 20,
-  "name": "Checking the valid username and password for login function",
-  "description": "",
-  "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;checking-the-valid-username-and-password-for-login-function;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 8,
-      "name": "@login"
-    }
-  ]
-});
-formatter.step({
-  "line": 10,
-  "name": "User launch the adactin application",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 11,
-  "name": "User enter the \"PavithraN\" valid username",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 12,
-  "name": "User enter the \"Pavi@2426\" valid password",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "User enter the login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "It lands to the homepage successfully",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinition.user_launch_the_adactin_application()"
-});
-formatter.result({
-  "duration": 304919200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "PavithraN",
-      "offset": 16
-    }
-  ],
-  "location": "StepDefinition.user_enter_the_valid_username(String)"
-});
-formatter.result({
-  "duration": 219169800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Pavi@2426",
-      "offset": 16
-    }
-  ],
-  "location": "StepDefinition.user_enter_the_valid_password(String)"
-});
-formatter.result({
-  "duration": 130717200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.user_enter_the_login_button()"
-});
-formatter.result({
-  "duration": 6474310200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.it_lands_to_the_homepage_successfully()"
-});
-formatter.result({
-  "duration": 121900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 126200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 178600,
-  "status": "passed"
-});
-formatter.background({
-  "line": 3,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 4,
-  "name": "the user is logged in",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "goes to landing page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinition.the_user_is_logged_in()"
-});
-formatter.result({
-  "duration": 119000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.goes_to_landing_page()"
-});
-formatter.result({
-  "duration": 236700,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 23,
+  "line": 17,
   "name": "User searching the required hotel for lovable stay",
   "description": "",
   "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;user-searching-the-required-hotel-for-lovable-stay",
@@ -523,43 +163,43 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 22,
+      "line": 16,
       "name": "@SearchHotel"
     }
   ]
 });
 formatter.step({
-  "line": 24,
+  "line": 18,
   "name": "User select the required location",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 25,
+  "line": 19,
   "name": "User select the number of rooms",
   "keyword": "When "
 });
 formatter.step({
-  "line": 26,
+  "line": 20,
   "name": "User mentioning checkin date",
   "keyword": "And "
 });
 formatter.step({
-  "line": 27,
+  "line": 21,
   "name": "User mentioning checkout date",
   "keyword": "And "
 });
 formatter.step({
-  "line": 28,
+  "line": 22,
   "name": "User selecting adults per room",
   "keyword": "And "
 });
 formatter.step({
-  "line": 29,
+  "line": 23,
   "name": "User enter the search button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 30,
+  "line": 24,
   "name": "It lands to the nextpage succesfully",
   "keyword": "Then "
 });
@@ -567,57 +207,57 @@ formatter.match({
   "location": "StepDefinition.user_select_the_required_location()"
 });
 formatter.result({
-  "duration": 3143073100,
+  "duration": 424466300,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_select_the_number_of_rooms()"
 });
 formatter.result({
-  "duration": 130848800,
+  "duration": 99680700,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_mentioning_checkin_date()"
 });
 formatter.result({
-  "duration": 200248000,
+  "duration": 90424600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_mentioning_checkout_date()"
 });
 formatter.result({
-  "duration": 161859900,
+  "duration": 109765100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_selecting_adults_per_room()"
 });
 formatter.result({
-  "duration": 192204100,
+  "duration": 113166100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_enter_the_search_button()"
 });
 formatter.result({
-  "duration": 1380481300,
+  "duration": 879786500,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.it_lands_to_the_nextpage_succesfully()"
 });
 formatter.result({
-  "duration": 134500,
+  "duration": 41300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 84000,
+  "duration": 42100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 104300,
+  "duration": 91300,
   "status": "passed"
 });
 formatter.background({
@@ -641,18 +281,18 @@ formatter.match({
   "location": "StepDefinition.the_user_is_logged_in()"
 });
 formatter.result({
-  "duration": 87000,
+  "duration": 46800,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.goes_to_landing_page()"
 });
 formatter.result({
-  "duration": 164600,
+  "duration": 42200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 33,
+  "line": 27,
   "name": "User selecting hotel in that specific location",
   "description": "",
   "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;user-selecting-hotel-in-that-specific-location",
@@ -660,23 +300,23 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 32,
+      "line": 26,
       "name": "@SelectHotel"
     }
   ]
 });
 formatter.step({
-  "line": 34,
+  "line": 28,
   "name": "User select his favourite hotel",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 35,
+  "line": 29,
   "name": "User enter the continue button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 36,
+  "line": 30,
   "name": "It lands to the nextpage succesfully",
   "keyword": "Then "
 });
@@ -684,29 +324,29 @@ formatter.match({
   "location": "StepDefinition.user_select_his_favourite_hotel()"
 });
 formatter.result({
-  "duration": 828895600,
+  "duration": 213799500,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_enter_the_continue_button()"
 });
 formatter.result({
-  "duration": 965798000,
+  "duration": 593977800,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.it_lands_to_the_nextpage_succesfully()"
 });
 formatter.result({
-  "duration": 133900,
+  "duration": 32400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 472600,
+  "duration": 41400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 316400,
+  "duration": 51600,
   "status": "passed"
 });
 formatter.background({
@@ -730,18 +370,18 @@ formatter.match({
   "location": "StepDefinition.the_user_is_logged_in()"
 });
 formatter.result({
-  "duration": 193600,
+  "duration": 58200,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.goes_to_landing_page()"
 });
 formatter.result({
-  "duration": 124600,
+  "duration": 68400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 39,
+  "line": 33,
   "name": "User mentioning details to book the hotel",
   "description": "",
   "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;user-mentioning-details-to-book-the-hotel",
@@ -749,149 +389,137 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 38,
+      "line": 32,
       "name": "@BookHotel"
     }
   ]
 });
 formatter.step({
-  "line": 40,
-  "name": "User mentioning \"Aashiq\" firstname",
+  "line": 34,
+  "name": "User mentioning firstname",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 41,
-  "name": "User mentioning \"crazie\" lastname",
+  "line": 35,
+  "name": "User mentioning lastname",
   "keyword": "When "
 });
 formatter.step({
-  "line": 42,
+  "line": 36,
   "name": "User mentioning billing address",
   "keyword": "And "
 });
 formatter.step({
-  "line": 43,
+  "line": 37,
   "name": "User mentioning creditcard number",
   "keyword": "And "
 });
 formatter.step({
-  "line": 44,
+  "line": 38,
   "name": "User selecting creditcard type",
   "keyword": "And "
 });
 formatter.step({
-  "line": 45,
+  "line": 39,
   "name": "User mentioning month of expiry",
   "keyword": "And "
 });
 formatter.step({
-  "line": 46,
+  "line": 40,
   "name": "user mentioning year of expiry",
   "keyword": "And "
 });
 formatter.step({
-  "line": 47,
+  "line": 41,
   "name": "User mentioning the cvv number",
   "keyword": "And "
 });
 formatter.step({
-  "line": 48,
+  "line": 42,
   "name": "User enter the booknow button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 49,
+  "line": 43,
   "name": "It lands to nextpage succesfully",
   "keyword": "Then "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Aashiq",
-      "offset": 17
-    }
-  ],
-  "location": "StepDefinition.user_mentioning_firstname(String)"
+  "location": "StepDefinition.user_mentioning_firstname()"
 });
 formatter.result({
-  "duration": 2650755200,
+  "duration": 474868500,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "crazie",
-      "offset": 17
-    }
-  ],
-  "location": "StepDefinition.user_mentioning_lastname(String)"
+  "location": "StepDefinition.user_mentioning_lastname()"
 });
 formatter.result({
-  "duration": 176817900,
+  "duration": 103293200,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_mentioning_billing_address()"
 });
 formatter.result({
-  "duration": 417803100,
+  "duration": 457368000,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_mentioning_creditcard_number()"
 });
 formatter.result({
-  "duration": 153747600,
+  "duration": 127746800,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_selecting_creditcard_type()"
 });
 formatter.result({
-  "duration": 173311300,
+  "duration": 104090900,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_mentioning_month_of_expiry()"
 });
 formatter.result({
-  "duration": 118695700,
+  "duration": 105000300,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_mentioning_year_of_expiry()"
 });
 formatter.result({
-  "duration": 187605600,
+  "duration": 114447300,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_mentioning_the_cvv_number()"
 });
 formatter.result({
-  "duration": 109274100,
+  "duration": 85599700,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_enter_the_booknow_button()"
 });
 formatter.result({
-  "duration": 245640200,
+  "duration": 93333100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.it_lands_to_nextpage_succesfully()"
 });
 formatter.result({
-  "duration": 105000,
+  "duration": 85400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 81300,
+  "duration": 35000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 91900,
+  "duration": 36400,
   "status": "passed"
 });
 formatter.background({
@@ -915,18 +543,18 @@ formatter.match({
   "location": "StepDefinition.the_user_is_logged_in()"
 });
 formatter.result({
-  "duration": 67700,
+  "duration": 35500,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.goes_to_landing_page()"
 });
 formatter.result({
-  "duration": 129100,
+  "duration": 26200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 52,
+  "line": 46,
   "name": "User validating booking confirmation page",
   "description": "",
   "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;user-validating-booking-confirmation-page",
@@ -934,18 +562,18 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 51,
+      "line": 45,
       "name": "@BookingConfirmartion"
     }
   ]
 });
 formatter.step({
-  "line": 53,
+  "line": 47,
   "name": "User enter the myitenary button",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 54,
+  "line": 48,
   "name": "It lands to nextpage succesfully",
   "keyword": "Then "
 });
@@ -953,22 +581,22 @@ formatter.match({
   "location": "StepDefinition.user_enter_the_myitenary_button()"
 });
 formatter.result({
-  "duration": 6327061500,
+  "duration": 6359094600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.it_lands_to_nextpage_succesfully()"
 });
 formatter.result({
-  "duration": 112700,
+  "duration": 36000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 95400,
+  "duration": 26600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 78400,
+  "duration": 33400,
   "status": "passed"
 });
 formatter.background({
@@ -992,18 +620,18 @@ formatter.match({
   "location": "StepDefinition.the_user_is_logged_in()"
 });
 formatter.result({
-  "duration": 116200,
+  "duration": 30100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.goes_to_landing_page()"
 });
 formatter.result({
-  "duration": 61300,
+  "duration": 24600,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 57,
+  "line": 51,
   "name": "User selecting hotel for cancellation",
   "description": "",
   "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;user-selecting-hotel-for-cancellation",
@@ -1011,13 +639,13 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 56,
+      "line": 50,
       "name": "@CancelHotel"
     }
   ]
 });
 formatter.step({
-  "line": 58,
+  "line": 52,
   "name": "User selecting reqiured hotel to cancel",
   "keyword": "Given "
 });
@@ -1025,15 +653,15 @@ formatter.match({
   "location": "StepDefinition.user_selecting_reqiured_hotel_to_cancel()"
 });
 formatter.result({
-  "duration": 921501400,
+  "duration": 537138400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 173400,
+  "duration": 67200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 125400,
+  "duration": 181000,
   "status": "passed"
 });
 formatter.background({
@@ -1057,18 +685,18 @@ formatter.match({
   "location": "StepDefinition.the_user_is_logged_in()"
 });
 formatter.result({
-  "duration": 165900,
+  "duration": 90100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.goes_to_landing_page()"
 });
 formatter.result({
-  "duration": 151100,
+  "duration": 82800,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 61,
+  "line": 55,
   "name": "User entering cancelbutton and confirming the cancellation",
   "description": "",
   "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;user-entering-cancelbutton-and-confirming-the-cancellation",
@@ -1076,23 +704,23 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 60,
+      "line": 54,
       "name": "@CancelConfirmation"
     }
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 56,
   "name": "User enter the cancel button",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 63,
+  "line": 57,
   "name": "user confirming the cancellation",
   "keyword": "When "
 });
 formatter.step({
-  "line": 64,
+  "line": 58,
   "name": "It loads to nextpage succesfully",
   "keyword": "Then "
 });
@@ -1100,29 +728,29 @@ formatter.match({
   "location": "StepDefinition.user_enter_the_cancel_button()"
 });
 formatter.result({
-  "duration": 62900,
+  "duration": 15500,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_confirming_the_cancellation()"
 });
 formatter.result({
-  "duration": 97796100,
+  "duration": 25165000,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.it_loads_to_nextpage_succesfully()"
 });
 formatter.result({
-  "duration": 61100,
+  "duration": 140800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 103300,
+  "duration": 63100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 108600,
+  "duration": 60400,
   "status": "passed"
 });
 formatter.background({
@@ -1146,18 +774,18 @@ formatter.match({
   "location": "StepDefinition.the_user_is_logged_in()"
 });
 formatter.result({
-  "duration": 91100,
+  "duration": 41400,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.goes_to_landing_page()"
 });
 formatter.result({
-  "duration": 61900,
+  "duration": 54900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 67,
+  "line": 61,
   "name": "User logout the page",
   "description": "",
   "id": "testing-hotel-booking-and-cancellation-functionalites-in-adactin-application;user-logout-the-page",
@@ -1165,18 +793,18 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 66,
+      "line": 60,
       "name": "@Logout"
     }
   ]
 });
 formatter.step({
-  "line": 68,
+  "line": 62,
   "name": "User enter the logoutbutton",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 69,
+  "line": 63,
   "name": "It loads to final page succefully",
   "keyword": "Then "
 });
@@ -1184,18 +812,18 @@ formatter.match({
   "location": "StepDefinition.user_enter_the_logoutbutton()"
 });
 formatter.result({
-  "duration": 1814888200,
+  "duration": 2110322800,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.it_loads_to_final_page_succefully()"
 });
 formatter.result({
-  "duration": 21500,
+  "duration": 168300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 78000,
+  "duration": 303500,
   "status": "passed"
 });
 });

@@ -25,5 +25,9 @@ public class ConfigurationReader {
 		String urlName = p.getProperty("Url");
 		return urlName;
 	}
+	public String getTestData() {
+		String path = p.getProperty("TestData");
+		return path;
+	}
 
 }

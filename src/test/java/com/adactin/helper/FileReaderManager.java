@@ -17,5 +17,10 @@ public class FileReaderManager {
 		ConfigurationReader cr = new ConfigurationReader();
 		return cr;
 	}
+	public TestData getTDInstance() {
+		TestData td= new TestData();
+		return td;
+		
+	}
 
 }
