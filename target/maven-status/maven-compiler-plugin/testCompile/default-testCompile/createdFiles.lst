@@ -1,0 +1,15 @@
+com\adactin\helper\ConfigurationReader.class
+com\adactin\pom\BookingConfirmPage.class
+com\adactin\runner\Runner.class
+com\adactin\stepdefinition\Hooks.class
+com\adactin\helper\FileReaderManager.class
+com\adactin\pom\BookingHotelpage.class
+com\adactin\pom\BookItenaryPage.class
+com\adactin\pom\SearchHotelPage.class
+com\adactin\pom\CancelHotelpage.class
+com\adactin\stepdefinition\StepDefinition.class
+com\adactin\pom\SignInPage.class
+com\adactin\helper\PageObjectManager.class
+com\adactin\pom\TestScript.class
+com\adactin\pom\LogOutPage.class
+com\adactin\pom\SelectHotelPage.class
